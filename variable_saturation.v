@@ -9,6 +9,7 @@ module variable_saturation
            output reg [ 1: 0 ] ast_source_error,
            output reg ast_source_valid
        );
+
 // Different versions of the processed data
 wire [ 11: 0 ] saturator_data0, saturator_data1, saturator_data2, saturator_data3;
 wire saturator_valid0, saturator_valid1, saturator_valid2, saturator_valid3;
@@ -39,8 +40,11 @@ always @( * ) begin
             ast_source_valid <= saturator_valid0;
         end
     endcase
-    ;
 end
+
+// Instantiate the 4 saturator instances with the appropriate parameters
+// Each saturator is 35-bit to 12-bit
+// Expected order of filters: flat, low pass, band pass, high pass
 
 auk_dspip_roundsat_hpfir saturator0
                          (
