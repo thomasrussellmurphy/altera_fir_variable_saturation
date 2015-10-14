@@ -58,9 +58,9 @@ auk_dspip_roundsat_hpfir saturator0
 
 defparam
     saturator0.IN_WIDTH_g = 35,
-    saturator0.REM_LSB_BIT_g = 15,
+    saturator0.REM_LSB_BIT_g = 13,
     saturator0.REM_LSB_TYPE_g = "Truncation",
-    saturator0.REM_MSB_BIT_g = 8,
+    saturator0.REM_MSB_BIT_g = 10,
     saturator0.REM_MSB_TYPE_g = "Saturating";
 
 auk_dspip_roundsat_hpfir saturator1
@@ -75,9 +75,9 @@ auk_dspip_roundsat_hpfir saturator1
 
 defparam
     saturator1.IN_WIDTH_g = 35,
-    saturator1.REM_LSB_BIT_g = 20,
+    saturator1.REM_LSB_BIT_g = 18,
     saturator1.REM_LSB_TYPE_g = "Truncation",
-    saturator1.REM_MSB_BIT_g = 3,
+    saturator1.REM_MSB_BIT_g = 5,
     saturator1.REM_MSB_TYPE_g = "Saturating";
 
 auk_dspip_roundsat_hpfir saturator2
@@ -92,9 +92,9 @@ auk_dspip_roundsat_hpfir saturator2
 
 defparam
     saturator2.IN_WIDTH_g = 35,
-    saturator2.REM_LSB_BIT_g = 19,
+    saturator2.REM_LSB_BIT_g = 17,
     saturator2.REM_LSB_TYPE_g = "Truncation",
-    saturator2.REM_MSB_BIT_g = 4,
+    saturator2.REM_MSB_BIT_g = 6,
     saturator2.REM_MSB_TYPE_g = "Saturating";
 
 
@@ -110,8 +110,8 @@ auk_dspip_roundsat_hpfir saturator3
 
 defparam
     saturator3.IN_WIDTH_g = 35,
-    saturator3.REM_LSB_BIT_g = 16,
+    saturator3.REM_LSB_BIT_g = 13,
     saturator3.REM_LSB_TYPE_g = "Truncation",
-    saturator3.REM_MSB_BIT_g = 7,
+    saturator3.REM_MSB_BIT_g = 10,
     saturator3.REM_MSB_TYPE_g = "Saturating";
 endmodule
